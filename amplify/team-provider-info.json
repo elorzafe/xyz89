@@ -1,0 +1,50 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "xyz89-20181110174602-authRole",
+            "UnauthRoleArn": "arn:aws:iam::345090917734:role/xyz89-20181110174602-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::345090917734:role/xyz89-20181110174602-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "xyz89-20181110174602-deployment",
+            "UnauthRoleName": "xyz89-20181110174602-unauthRole",
+            "StackName": "xyz89-20181110174602",
+            "StackId": "arn:aws:cloudformation:us-east-1:345090917734:stack/xyz89-20181110174602/8ad0b4e0-e553-11e8-bbb4-50faeaabf0d1"
+        }
+    },
+    "dev1": {
+        "awscloudformation": {
+            "AuthRoleName": "xyz89-20181110174748-authRole",
+            "UnauthRoleArn": "arn:aws:iam::345090917734:role/xyz89-20181110174748-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::345090917734:role/xyz89-20181110174748-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "xyz89-20181110174748-deployment",
+            "UnauthRoleName": "xyz89-20181110174748-unauthRole",
+            "StackName": "xyz89-20181110174748",
+            "StackId": "arn:aws:cloudformation:us-east-1:345090917734:stack/xyz89-20181110174748/c9a2b510-e553-11e8-9351-500c286e4435"
+        }
+    },
+    "dev2": {
+        "awscloudformation": {
+            "AuthRoleName": "xyz89-20181110180402-authRole",
+            "UnauthRoleArn": "arn:aws:iam::345090917734:role/xyz89-20181110180402-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::345090917734:role/xyz89-20181110180402-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "xyz89-20181110180402-deployment",
+            "UnauthRoleName": "xyz89-20181110180402-unauthRole",
+            "StackName": "xyz89-20181110180402",
+            "StackId": "arn:aws:cloudformation:us-east-1:345090917734:stack/xyz89-20181110180402/0e4c4df0-e556-11e8-9d87-500c217dbe62"
+        }
+    },
+    "mydev": {
+        "awscloudformation": {
+            "AuthRoleName": "xyz89-20181111201723-authRole",
+            "UnauthRoleArn": "arn:aws:iam::345090917734:role/xyz89-20181111201723-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::345090917734:role/xyz89-20181111201723-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "xyz89-20181111201723-deployment",
+            "UnauthRoleName": "xyz89-20181111201723-unauthRole",
+            "StackName": "xyz89-20181111201723",
+            "StackId": "arn:aws:cloudformation:us-east-1:345090917734:stack/xyz89-20181111201723/d76cd520-e631-11e8-a865-50fae98a10d2"
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "paths": [
+        {
+            "name": "/items",
+            "lambdaFunction": "xyz89dc4d906c",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "api310b5da9",
+    "apiName": "api310b5da9",
+    "functionArns": [
+        {
+            "lambdaFunction": "xyz89dc4d906c"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "xyz89-20181111201723-authRole",
+        "unAuthRoleName": "xyz89-20181111201723-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "xyz89dc4d906c",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}
