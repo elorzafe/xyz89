@@ -34,7 +34,17 @@
 			"Type": "AWS::Lambda::Function",
 			"Properties": {
 				"Handler": "index.handler",
-				"FunctionName": "xyz89_cfnlambda_69ade714",
+				"FunctionName": {
+					"Fn::Join": [
+						"-",
+						[
+							"xyz89_cfnlambda_69ade714",
+							{
+								"Ref": "env"
+							}
+						]
+					]
+				},
 				"Role": {
 					"Fn::GetAtt": [
 						"LambdaExecutionRole",
@@ -51,15 +61,25 @@
 				"Runtime": "nodejs6.10",
 				"Timeout": "300",
 				"Code": {
-					"S3Bucket": "xyz89-20181111201723-deployment",
-					"S3Key": "amplify-builds/lexf13242a8-1541996630-latest-build.zip"
+					"S3Bucket": "xyz89-20181112105957-deployment",
+					"S3Key": "amplify-builds/lexf13242a8-1542049352-latest-build.zip"
 				}
 			}
 		},
 		"LambdaExecutionRole": {
 			"Type": "AWS::IAM::Role",
 			"Properties": {
-				"RoleName": "lexLambdaRole69ade714",
+				"RoleName": {
+					"Fn::Join": [
+						"-",
+						[
+							"lexLambdaRole69ade714",
+							{
+								"Ref": "env"
+							}
+						]
+					]
+				},
 				"AssumeRolePolicyDocument": {
 					"Version": "2012-10-17",
 					"Statement": [

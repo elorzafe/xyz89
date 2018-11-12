@@ -46,5 +46,17 @@
             "StackName": "xyz89-20181111201723",
             "StackId": "arn:aws:cloudformation:us-east-1:345090917734:stack/xyz89-20181111201723/d76cd520-e631-11e8-a865-50fae98a10d2"
         }
+    },
+    "prodddd": {
+        "awscloudformation": {
+            "AuthRoleName": "xyz89-20181112105957-authRole",
+            "UnauthRoleArn": "arn:aws:iam::345090917734:role/xyz89-20181112105957-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::345090917734:role/xyz89-20181112105957-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "xyz89-20181112105957-deployment",
+            "UnauthRoleName": "xyz89-20181112105957-unauthRole",
+            "StackName": "xyz89-20181112105957",
+            "StackId": "arn:aws:cloudformation:us-east-1:345090917734:stack/xyz89-20181112105957/2635c970-e6ad-11e8-a15c-50d5cafe76fe"
+        }
     }
 }

@@ -81,19 +81,19 @@
 		"storagedynamo44620e88": {
 			"Type": "AWS::CloudFormation::Stack",
 			"Properties": {
-				"TemplateURL": "https://s3.amazonaws.com/xyz89-20181111201723-deployment/amplify-cfn-templates/storage/dynamo44620e88-cloudformation-template.json",
+				"TemplateURL": "https://s3.amazonaws.com/xyz89-20181112105957-deployment/amplify-cfn-templates/storage/dynamo44620e88-cloudformation-template.json",
 				"Parameters": {
 					"tableName": "dynamo44620e88",
 					"partitionKeyName": "id",
 					"partitionKeyType": "S",
-					"env": "mydev"
+					"env": "prodddd"
 				}
 			}
 		},
 		"interactionslexf13242a8": {
 			"Type": "AWS::CloudFormation::Stack",
 			"Properties": {
-				"TemplateURL": "https://s3.amazonaws.com/xyz89-20181111201723-deployment/amplify-cfn-templates/interactions/lexf13242a8-cloudformation-template.json",
+				"TemplateURL": "https://s3.amazonaws.com/xyz89-20181112105957-deployment/amplify-cfn-templates/interactions/lexf13242a8-cloudformation-template.json",
 				"Parameters": {
 					"authRoleArn": {
 						"Fn::GetAtt": [
@@ -107,14 +107,35 @@
 					"unauthRoleName": {
 						"Ref": "UnauthRoleName"
 					},
-					"env": "mydev"
+					"env": "prodddd"
+				}
+			}
+		},
+		"interactionslex06583978": {
+			"Type": "AWS::CloudFormation::Stack",
+			"Properties": {
+				"TemplateURL": "https://s3.amazonaws.com/xyz89-20181112105957-deployment/amplify-cfn-templates/interactions/lex06583978-cloudformation-template.json",
+				"Parameters": {
+					"authRoleArn": {
+						"Fn::GetAtt": [
+							"AuthRole",
+							"Arn"
+						]
+					},
+					"authRoleName": {
+						"Ref": "AuthRoleName"
+					},
+					"unauthRoleName": {
+						"Ref": "UnauthRoleName"
+					},
+					"env": "prodddd"
 				}
 			}
 		},
 		"functionxyz89dc4d906c": {
 			"Type": "AWS::CloudFormation::Stack",
 			"Properties": {
-				"TemplateURL": "https://s3.amazonaws.com/xyz89-20181111201723-deployment/amplify-cfn-templates/function/xyz89dc4d906c-cloudformation-template.json",
+				"TemplateURL": "https://s3.amazonaws.com/xyz89-20181112105957-deployment/amplify-cfn-templates/function/xyz89dc4d906c-cloudformation-template.json",
 				"Parameters": {
 					"storagedynamo44620e88Name": {
 						"Fn::GetAtt": [
@@ -128,14 +149,14 @@
 							"Outputs.Arn"
 						]
 					},
-					"env": "mydev"
+					"env": "prodddd"
 				}
 			}
 		},
 		"apiapi310b5da9": {
 			"Type": "AWS::CloudFormation::Stack",
 			"Properties": {
-				"TemplateURL": "https://s3.amazonaws.com/xyz89-20181111201723-deployment/amplify-cfn-templates/api/api310b5da9-cloudformation-template.json",
+				"TemplateURL": "https://s3.amazonaws.com/xyz89-20181112105957-deployment/amplify-cfn-templates/api/api310b5da9-cloudformation-template.json",
 				"Parameters": {
 					"authRoleName": {
 						"Ref": "AuthRoleName"
@@ -155,21 +176,21 @@
 							"Outputs.Arn"
 						]
 					},
-					"env": "mydev"
+					"env": "prodddd"
 				}
 			}
 		},
 		"apixyz89": {
 			"Type": "AWS::CloudFormation::Stack",
 			"Properties": {
-				"TemplateURL": "https://s3.amazonaws.com/xyz89-20181111201723-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+				"TemplateURL": "https://s3.amazonaws.com/xyz89-20181112105957-deployment/amplify-cfn-templates/api/cloudformation-template.json",
 				"Parameters": {
 					"AppSyncApiName": "xyz89",
-					"schemaGraphql": "s3://xyz89-20181111201723-deployment/amplify-appsync-files/schema.graphql.1541999908780",
-					"ResolverBucket": "xyz89-20181111201723-deployment",
+					"schemaGraphql": "s3://xyz89-20181112105957-deployment/amplify-appsync-files/schema.graphql.1542052100719",
+					"ResolverBucket": "xyz89-20181112105957-deployment",
 					"ResolverRootKey": "amplify-appsync-files",
-					"DeploymentTimestamp": "1541999908780",
-					"env": "mydev"
+					"DeploymentTimestamp": "1542052100719",
+					"env": "prodddd"
 				}
 			}
 		}
